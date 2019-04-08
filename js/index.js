@@ -100,8 +100,10 @@ const bottomP = document.querySelectorAll('.bottom-content p');
 
 bottomH4[0].textContent = siteContent['main-content']['services-h4'];
 bottomH4[1].textContent = siteContent['main-content']['product-h4'];
+bottomH4[2].textContent = siteContent['main-content']['vision-h4'];
 bottomP[0].textContent = siteContent['main-content']['services-content'];
 bottomP[1].textContent = siteContent['main-content']['product-content'];
+bottomP[2].textContent = siteContent['main-content']['vision-content'];
 
 // contact section
 const contactH4 = document.querySelector('.contact h4');
