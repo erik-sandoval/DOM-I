@@ -61,15 +61,14 @@ const textAppLink = document.createTextNode('Careers');
 appendLink.appendChild(textAppLink);
 appendLink.style.color = "green";
 document.querySelector('nav').appendChild(appendLink);
+// nav links
 
-links[0].textContent = siteContent.nav["nav-item-1"]
-links[1].textContent = siteContent.nav["nav-item-2"]
-links[2].textContent = siteContent.nav["nav-item-3"]
-links[3].textContent = siteContent.nav["nav-item-4"]
-links[4].textContent = siteContent.nav["nav-item-5"]
-links[5].textContent = siteContent.nav["nav-item-6"]
+links.forEach(function (element, index = 1) {
+  index += 1;
+  element.textContent = siteContent.nav[`nav-item-${index}`]
+});
 
-logo.setAttribute('src', siteContent["nav"]["img-src"])
+logo.src = siteContent["nav"]["img-src"]
 
 // cta section
 const h1 = document.querySelector('.cta-text h1');
